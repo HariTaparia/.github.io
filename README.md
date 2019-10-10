@@ -1,2 +1,2 @@
-# .github.io
+# haritaparia.github.io
 Portfolio Website
