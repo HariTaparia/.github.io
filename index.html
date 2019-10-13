@@ -6,42 +6,38 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
-  <div class="slideshow-container">
-		<div class="mySlides fade">
-			<img src = "https://wallpapercave.com/wp/i7hDXvV.jpg">
-		</div>
-		<div class="mySlides fade">
-			<img src = "https://wallpapercave.com/wp/rvzvQJg.jpg">
-		</div>
-		<div class="mySlides fade">
-			<img src = "https://wallpapercave.com/wp/zMxdltY.jpg">
-		</div>
-	</div>
-  <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  </div>
-  <script>
-    var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-  </script>
+ <div class="nav">
+	 <div class"nav-item">
+	 <button class="btn btn-active">
+		 <li class="fas fa-sitemap"></li>
+		 <span>Home</span>
+		 </button>
+	 </div>
+	 <div class"nav-item">
+	 <button class="btn">
+		 <li class="fas fa-align-justify"></li>
+		 <span>About</span>
+		 </button>
+	 </div>
+	 <div class"nav-item">
+	 <button class="btn">
+		 <li class="fas fa-atom"></li>
+		 <span>Projects</span>
+		 </button>
+	 </div>
+	 <div class"nav-item">
+	 <button class="btn">
+		 <li class="fas fa-quote-right"></li>
+		 <span>Story Board</span>
+		 </button>
+	 </div>
+	 <div class"nav-item">
+	 <button class="btn">
+		 <li class="far fa-address-book"></li>
+		 <span>Contact</span>
+		 </button>
+	 </div>	 
+	</div>	     
+	     
 </body>
 </html>
