@@ -4,68 +4,78 @@ html, body{
 }
 .nav-container{
 	position:fixed;
-	margin-left:10%;
+    width:100%;
+	margin-left:5%;
 }
-.nav{
-	width: 80%;
-	font-weight: 400;
-	background-color: #07095c;
-	box-shadow: 0px 1px 5px 0 rgba(109, 33, 79, 0.3);
-	border-radius: 2px;
-	display: flex;
-	padding: 20px 30px;
+.nav {
+    width: 80%;
+    font-weight: 400;
+    background-color: #07095c;
+    box-shadow: 0px 1px 14px 8px rgba(7, 9, 92, 0.71);
+    border-radius: 32px;
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
 }
 
 .nav-item{
-	display: block;
+	display: flex;
+    flex-direction: row;
 	margin-left: 26px;
+    
 }
 
 button{
-	outline: none;
+	outline: inherit;
 	cursor: pointer;
 }
 button span{
-	display: none;
+	display: inline-flex;
+    padding: 5% 5%;
 }
 button.btn{
-	font-size: 1rem;
 	font-family: 'Quicksand', sans-serif;
 	color: #FEA47F;
-	border: none;
 	background: transparent;
+    border:none;
 }
 
 button.btn-active{
-	display: inline-block;
-	color: #FC427B;
-	animation: switch-colors 2s;
+    align-content: center;
+    color: #e5e2ec;
+    animation: switch-colors 2s;
+    animation: fade-in 1.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button.btn-active span{
-	display: inline-block;
-	padding: 0 80px;
-	animation: fade-in 1.3s;
-}
-
-.text{
-	display: none;
+button.btn-active:hover{
+    flex-direction: column;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 545px){
-	.nav{
-		width: 60px;
-		height: 460px;
-		font-weight: 400;
-		background-color: #F8EFBA;
-		box-shadow: 0px 1px 5px 0 rgba(109, 33, 79, 0.3);
-		border-radius: 2px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-  justify-content: center;
-		position: relative;
-	}
+    .nav-container{
+	   position:fixed;
+        width:100%;
+	    margin-left:15%;
+        align-items: center;
+        justify-content: center;
+    }
+	.nav {
+        width: 60%;
+        height: 60%;
+        font-weight: 400;
+        background-color: #07095c;
+        box-shadow: 0px 1px 14px 8px rgba(7, 9, 92, 0.71);
+        border-radius: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 2%;
+    }
 	.nav-item{
 		margin: 0 auto;
 		margin-top: 20px;
@@ -83,18 +93,19 @@ button.btn-active span{
 		color: #FEA47F;
 		border: none;
 		background: transparent;
+        padding: 5% 30%;
 	}
 
 	button.btn-active{
 		display: block;
 		color: #FC427B;
 		animation: switch-colors 2s;
+        padding: 5% 30%;
 	}
 
 	button.btn-active span{
 		display: block;
-		padding: 80px 0;
-		animation: fade-in-vertical 1.3s;
+		padding: 2% 10%;
 	}
 }
 
@@ -114,17 +125,6 @@ button.btn-active span{
 	}
 	to{
 		opacity: 1;
-		padding: 0 80px;
-	}
-}
-
-@keyframes fade-in-vertical{
-	from{
-		padding: 0;
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-		padding: 80px 0;
+		padding: 0 30%;
 	}
 }
