@@ -5,7 +5,7 @@ html, body{
 header{
     position: fixed;
     left: 0px;
-    top: 0px;
+    top: 15px;
     z-index: 5000;
     width:100%;
     background-color: #111155;
@@ -31,6 +31,10 @@ nav.begi{
 .nav-item{
     padding:  10px 0px;
 }
+.nav-item:hover{     background-color: aliceblue; }
+.nav-item:hover .fas{   color: #111155; }
+.nav-item:hover .far{   color: #111155; }
+.nav-item:hover span{    color: #111155;}
 button{
     cursor: pointer;
 }
